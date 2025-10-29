@@ -1,9 +1,9 @@
 ---
 name: payload-cms
-description: Use when working with Payload CMS projects, payload.config.ts, collections, fields, hooks, access control, or Payload API. Provides TypeScript patterns and examples for Payload 3.x development.
-version: '2.0.0'
+description: Use when working with Payload CMS projects, payload.config.ts, collections, fields, hooks, access control, migrations, or Payload API. Provides TypeScript patterns and examples for Payload 3.x development.
+version: '2.1.0'
 payload-version: '3.x'
-last-updated: '2025-01-27'
+last-updated: '2025-10-29'
 ---
 
 # Payload CMS Application Development
@@ -30,6 +30,8 @@ Payload 3.x is a Next.js native CMS with TypeScript-first architecture, providin
 | Custom API routes        | Collection/root endpoints                 | [ADVANCED.md#custom-endpoints](reference/ADVANCED.md#custom-endpoints)                                                           |
 | Cloud storage            | Storage adapter plugins                   | [ADAPTERS.md#storage-adapters](reference/ADAPTERS.md#storage-adapters)                                                           |
 | Multi-language           | `localization` config + `localized: true` | [ADVANCED.md#localization](reference/ADVANCED.md#localization)                                                                   |
+| Database migrations      | `migrate:create` with flags               | [MIGRATIONS.md#migration-commands](reference/MIGRATIONS.md#migration-commands)                                                   |
+| Rename field             | Multi-phase migrations                    | [MIGRATIONS.md#rename-field](reference/MIGRATIONS.md#rename-field)                                                               |
 
 ## Quick Start
 
@@ -201,6 +203,7 @@ import type { Post, User } from '@/payload-types'
 - **[ACCESS-CONTROL-ADVANCED.md](reference/ACCESS-CONTROL-ADVANCED.md)** - Context-aware, time-based, subscription-based access, factory functions, templates
 - **[QUERIES.md](reference/QUERIES.md)** - Query operators, Local/REST/GraphQL APIs
 - **[ADAPTERS.md](reference/ADAPTERS.md)** - Database, storage, email adapters, transactions
+- **[MIGRATIONS.md](reference/MIGRATIONS.md)** - Database migrations, schema changes, data transformations, multi-phase workflows
 - **[ADVANCED.md](reference/ADVANCED.md)** - Authentication, jobs, endpoints, components, plugins, localization
 
 ## Resources
